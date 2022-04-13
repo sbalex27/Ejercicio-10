@@ -66,7 +66,7 @@ void ProductsRepository::update(std::string search_name, ProductEntity* entity)
 	rename(temp_provider.c_str(), file_provider.c_str());
 }
 
-void ProductsRepository::destroy(std::string name)
+void ProductsRepository::destroy(std::string search_name)
 {
-	//
+	update(search_name, NULL);
 }

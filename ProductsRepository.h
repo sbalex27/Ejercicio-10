@@ -45,7 +45,7 @@ public:
 	/// <summary>
 	/// Destroy a existing entity sotraged
 	/// </summary>
-	/// <param name="name">Value of search</param>
-	void destroy(std::string name);
+	/// <param name="search_name">Value of search</param>
+	void destroy(std::string search_name);
 };
 
