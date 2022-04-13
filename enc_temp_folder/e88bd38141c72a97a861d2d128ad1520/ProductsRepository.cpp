@@ -29,6 +29,7 @@ void ProductsRepository::store(ProductEntity* entity)
 	if (!file.is_open()) throw "Unable file";
 	file << std::endl << entity->name << "\t" << entity->price << "\t" << entity->stock;
 	file.close();
+	
 }
 
 void ProductsRepository::update(ProductEntity* entity)
