@@ -4,6 +4,18 @@
 class ProductEntity
 {
 public:
+	/// <summary>
+	/// Default empty entity constructor
+	/// </summary>
+	ProductEntity();
+
+	/// <summary>
+	/// Filled entity constructor
+	/// </summary>
+	/// <param name="name">Name property</param>
+	/// <param name="price">Price property</param>
+	/// <param name="stock">Stock property</param>
+	ProductEntity(std::string name, float price, int stock);
 
 	/// <summary>
 	/// Name of the product
