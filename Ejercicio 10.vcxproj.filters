@@ -21,9 +21,15 @@
     <ClCompile Include="ProductEntity.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="ProductsRepository.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ProductEntity.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductsRepository.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
