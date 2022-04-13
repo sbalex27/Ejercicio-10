@@ -33,13 +33,13 @@ public:
 	/// Store a new entity
 	/// </summary>
 	/// <param name="entity">Instance to store</param>
-	void store(ProductEntity entity);
+	void store(ProductEntity* entity);
 
 	/// <summary>
 	/// Update a existing entity storaged
 	/// </summary>
 	/// <param name="entity">Instance to update</param>
-	void update(ProductEntity entity);
+	void update(ProductEntity* entity);
 
 	/// <summary>
 	/// Destroy a existing entity sotraged
