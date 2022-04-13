@@ -15,6 +15,7 @@ int main() {
 		cout << "3. Crear un producto" << endl;
 		cout << "4. Modificar un producto" << endl;
 		cout << "5. Borrar un producto" << endl;
+		cout << "0. Salir" << endl;
 		cin >> option;
 
 		switch (option)
