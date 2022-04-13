@@ -9,11 +9,19 @@ ProductsRepository::ProductsRepository(std::string file_provider, std::string te
 
 std::vector<ProductEntity> ProductsRepository::index()
 {
-	return {
-		ProductEntity("iPhone", 3000.0f, 30),
-		ProductEntity("Samsung", 3500.0f, 20),
-		ProductEntity("Xaomi", 3250.0f, 10),
-	};
+	std::vector<ProductEntity> data{};
+	std::ifstream input_file(file_provider.c_str());
+
+	if (!input_file.is_open()) throw "Unaviable file";
+
+	while (!input_file.eof())
+	{
+		ProductEntity serialized = ProductEntity();
+		input_file >> serialized.name >> serialized.price >> serialized.stock;
+		data.push_back(serialized);
+	}
+
+	return data;
 }
 
 ProductEntity ProductsRepository::show(std::string name)
@@ -26,7 +34,7 @@ void ProductsRepository::store(ProductEntity* entity)
 {
 	std::ofstream file;
 	file.open(this->file_provider, std::ios::app);
-	if (!file.is_open()) throw "Unable file";
+	if (!file.is_open()) throw "Unaviable file";
 	file << std::endl << entity->name << "\t" << entity->price << "\t" << entity->stock;
 	file.close();
 }
