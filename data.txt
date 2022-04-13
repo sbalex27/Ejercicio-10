@@ -1,2 +1,4 @@
 
-Lentes	2000	10
+Audifonos	189	9
+Lentes	1898	5
+Telefono	4799	19

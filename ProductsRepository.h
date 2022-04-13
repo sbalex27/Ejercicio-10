@@ -38,8 +38,9 @@ public:
 	/// <summary>
 	/// Update a existing entity storaged
 	/// </summary>
+	/// <param name="search_name">Value of search</param>
 	/// <param name="entity">Instance to update</param>
-	void update(ProductEntity* entity);
+	void update(std::string search_name, ProductEntity* entity);
 
 	/// <summary>
 	/// Destroy a existing entity sotraged

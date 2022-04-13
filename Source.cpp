@@ -32,6 +32,7 @@ int main() {
 			string to_find;
 			cout << "Buscar a: "; cin >> to_find;
 			repository->show(to_find).print();
+			break;
 		}
 		case 3:
 		{
@@ -51,6 +52,8 @@ int main() {
 
 			cout << "Nuevos Valores: " << endl;
 			entity.request();
+
+			repository->update(to_find, &entity);
 			break;
 		}
 		case 5:
