@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
 	int option = 0;
-	ProductsRepository* repository = new ProductsRepository("data.txt", "temporal.txt");
+	ProductsRepository* repository = new ProductsRepository("ejercicio_10_data.txt", "temporal.txt");
 
 	do
 	{

@@ -1,0 +1,11 @@
+
+Lentes	1898.99	5
+Telefono	4799.49	19
+Samsung	9000.19	10
+XaomiXS	5500.20	10
+Peraphone	1599.99	20
+BateriaPC	799.00	2
+Curitas	1.99	100
+Bocinas	299.50	5
+Cafe	4.99	100
+Mascarillas	1.50	1000	
